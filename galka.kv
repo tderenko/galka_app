@@ -1,0 +1,21 @@
+<View>
+    rows: 3
+    padding: 30
+
+    news_items: news_items
+    menu_button: menu_button
+
+    BoxLayout:
+        size_hint: 1, 0.1
+        Label:
+            text: "galka.if.ua"
+        Button:
+            id: menu_button
+            size_hint: 0.2, 1
+            text: "menu"
+            background_color: 0.7, 0.1, 0.9, 1
+            on_release:
+                root.click_menu()
+    ScrollView:
+        BoxLayout:
+            id: news_items
