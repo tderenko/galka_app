@@ -4,6 +4,7 @@
 
     news_items: news_items
     menu_button: menu_button
+    pagi_section: pagi_section
 
     BoxLayout:
         size_hint: 1, 0.1
@@ -17,5 +18,13 @@
             on_release:
                 root.click_menu()
     ScrollView:
+        size_hint: 1, 0.8
         BoxLayout:
+            size_hint_y: None
+            height: 1400
+            padding: 0, 0, 0, 20
             id: news_items
+
+    BoxLayout:
+        id: pagi_section
+        size_hint: 1, 0.1
